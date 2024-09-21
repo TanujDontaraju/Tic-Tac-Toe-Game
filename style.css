@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(247, 202, 201);
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    padding-top: 30px; /* Adjusted padding-top to move everything up a bit */
+    background-color: rgb(247, 202, 201);
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 180px);
+    gap: 15px;
+    margin-top: 20px; /* Adjusted margin-top to move the board up */
+}
+
+.cell {
+    width: 180px;
+    height: 180px;
+    background-color: rgb(249, 228, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: rgb(221, 193, 240);
+}
+
+button {
+    margin-top: 40px; /* Adjusted margin-top to move the button up */
+    padding: 15px 30px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: rgb(249, 228, 255);
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(221, 193, 240);
+}
+
+#result {
+    margin-top: 30px; /* Adjusted margin-top to move the result text up */
+    font-size: 24px;
+}
